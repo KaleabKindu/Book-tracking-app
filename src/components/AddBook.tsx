@@ -15,7 +15,6 @@ const AddBook = (props: Props) => {
     const [ title, setTitle ] = useState('')
     const { toast } = useToast()
     const handleClick = async () => {
-        console.log('jdf')
         try {
             await addBook(title).unwrap()
             setTitle('')
